@@ -4,7 +4,7 @@ Summary:	Apache module: Automatically updates files in a CVS-based webtree
 Summary(pl):	Modu³ do apache: Automatyczne uaktualnianie plików z drzewa CVS
 Name:		apache1-mod_%{mod_name}
 Version:	0.5
-Release:	1.4
+Release:	2
 License:	GPL
 Group:		Networking/Daemons
 # working URL: http://www.sub.nu/mod_cvs/src/
