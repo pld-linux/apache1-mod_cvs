@@ -6,6 +6,7 @@ Version:	0.4
 Release:	2
 License:	GPL
 Group:		Networking/Daemons
+Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
 Source0:	mod_%{mod_name}-%{version}.tar.gz
 URL:		http://www.sub.nu/mod_cvs/
