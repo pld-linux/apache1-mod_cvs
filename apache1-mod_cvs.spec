@@ -10,6 +10,7 @@ Group:		Networking/Daemons
 # working URL: http://www.sub.nu/mod_cvs/src/
 # (but only separate files here, no tarball)
 Source0:	ftp://ftp.sub.nu/pub/mod_cvs/mod_%{mod_name}-%{version}.tar.gz
+# Source0-md5:	e2cfe7818337915e6cbaffa45852012f
 URL:		http://www.sub.nu/mod_cvs/
 BuildRequires:	%{apxs}
 BuildRequires:	apache-devel
