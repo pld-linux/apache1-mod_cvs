@@ -4,7 +4,7 @@ Summary:	Apache module: Automatically updates files in a CVS-based webtree
 Summary(pl):	Modu³ do apache: Automatyczne uaktualnianie plików z drzewa CVS
 Name:		apache-mod_%{mod_name}
 Version:	0.4
-Release:	2
+Release:	3
 License:	GPL
 Group:		Networking/Daemons
 Group(cs):	Sí»ové/Démoni
