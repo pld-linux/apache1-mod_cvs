@@ -3,7 +3,7 @@ Summary:	Apache module: Automatically updates files in a CVS-based webtree.
 Summary(pl):	Modu³ do apache: Automatyczne uaktualnianie plików z drzewa CVS
 Name:		apache-mod_%{mod_name}
 Version:	0.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Daemons
 Group(pl):	Sieciowe/Serwery
@@ -20,10 +20,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_pkglibdir	%(/usr/sbin/apxs -q LIBEXECDIR)
 
 %description
-Apache module: On-the-fly decompression of HTML documents.
+Apache module: Automatically updates files in a CVS-based webtree.
 
 %description -l pl
-Modu³ do apache: dekompresuje dokumenty HTML w locie.
+Modu³ do apache: Automatyczne uaktualnianie plików z drzewa CVS.
 
 %prep 
 %setup -q -n mod_%{mod_name}-%{version}
