@@ -24,7 +24,7 @@ Apache module: Automatically updates files in a CVS-based webtree.
 %description -l pl
 Modu³ do apache: Automatyczne uaktualnianie plików z drzewa CVS.
 
-%prep 
+%prep
 %setup -q -n mod_%{mod_name}-%{version}
 
 %build
