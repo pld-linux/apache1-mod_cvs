@@ -12,7 +12,8 @@ URL:		http://www.sub.nu/mod_cvs/
 BuildRequires:	/usr/sbin/apxs
 BuildRequires:	apache-devel
 BuildRequires:	zlib-devel
-Prereq:		/usr/sbin/apxs
+Prereq:		%{_sbindir}/apxs
+BuildRequires:	%{_sbindir}/apxs
 Requires:	apache
 BuildRoot:	/tmp/%{name}-%{version}-root
 
