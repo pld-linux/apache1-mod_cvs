@@ -7,12 +7,14 @@ Version:	0.5
 Release:	4
 License:	GPL
 Group:		Networking/Daemons
+# working URL: http://www.sub.nu/mod_cvs/src/
+# (but only separate files here, no tarball)
 Source0:	ftp://ftp.sub.nu/pub/mod_cvs/mod_%{mod_name}-%{version}.tar.gz
 URL:		http://www.sub.nu/mod_cvs/
 BuildRequires:	%{apxs}
 BuildRequires:	apache-devel
 BuildRequires:	zlib-devel
-Prereq:		%{_sbindir}/apxs
+Requires(post,preun):	%{apxs}
 Requires:	apache
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
