@@ -4,7 +4,7 @@ Summary(pl):	Modu³ do apache: Automatyczne uaktualnianie plików z drzewa CVS
 Name:		apache-mod_%{mod_name}
 Version:	0.4
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		Networking/Daemons
 Group(pl):	Sieciowe/Serwery
 Source0:	mod_%{mod_name}-%{version}.tar.gz
