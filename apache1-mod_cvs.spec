@@ -15,7 +15,7 @@ BuildRequires:	zlib-devel
 Prereq:		%{_sbindir}/apxs
 BuildRequires:	%{_sbindir}/apxs
 Requires:	apache
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_pkglibdir	%(/usr/sbin/apxs -q LIBEXECDIR)
 
