@@ -1,5 +1,5 @@
 %define		mod_name	cvs
-Summary:	Apache module: Automatically updates files in a CVS-based webtree.
+Summary:	Apache module: Automatically updates files in a CVS-based webtree
 Summary(pl):	Modu³ do apache: Automatyczne uaktualnianie plików z drzewa CVS
 Name:		apache-mod_%{mod_name}
 Version:	0.4
@@ -12,8 +12,7 @@ URL:		http://www.sub.nu/mod_cvs/
 BuildRequires:	/usr/sbin/apxs
 BuildRequires:	apache-devel
 BuildRequires:	zlib-devel
-Prereq:		%{_sbindir}/apxs
-BuildRequires:	%{_sbindir}/apxs
+Prereq:		/usr/sbin/apxs
 Requires:	apache
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,12 +32,9 @@ Modu³ do apache: Automatyczne uaktualnianie plików z drzewa CVS.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_pkglibdir}
 
 install mod_%{mod_name}.so $RPM_BUILD_ROOT%{_pkglibdir}
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{_pkglibdir}/* 
 
 %post
 /usr/sbin/apxs -e -a -n %{mod_name} %{_pkglibdir}/mod_%{mod_name}.so 1>&2
