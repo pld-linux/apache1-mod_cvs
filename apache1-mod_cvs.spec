@@ -12,8 +12,7 @@ Group:		Networking/Daemons
 Source0:	ftp://ftp.sub.nu/pub/mod_cvs/mod_%{mod_name}-%{version}.tar.gz
 # Source0-md5:	e2cfe7818337915e6cbaffa45852012f
 URL:		http://www.sub.nu/mod_cvs/
-BuildRequires:	apache1-apxs
-BuildRequires:	apache1-devel >= 1.3.33-2
+BuildRequires:	apache1-devel >= 1.3.39
 BuildRequires:	rpmbuild(macros) >= 1.268
 BuildRequires:	zlib-devel
 Requires(triggerpostun):	%{apxs}
